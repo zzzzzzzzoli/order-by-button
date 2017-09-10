@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="no 'order by' tag"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <com.zzzzzzzzoli.orderbybuttons.OrderByGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableRight="@drawable/price_button"
+            app:extra="false"
+            app:tag="price" />
+
+        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableRight="@drawable/distance_button"
+            app:tag="distance" />
+
+        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableRight="@drawable/name_button"
+            app:tag="name" />
+
+
+        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableRight="@drawable/time_button"
+            app:tag="time" />
+
+        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableRight="@drawable/applaud_button"
+            app:enableExtra="false"
+            app:tag="applaud" />
+    </com.zzzzzzzzoli.orderbybuttons.OrderByGroup>
+</LinearLayout>

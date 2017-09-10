@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OrderByButton">
+        <attr name="enableExtra" format="boolean"/>
+        <attr name="extra" format="boolean"/>
+        <attr name="tag" format="string"/>
+        <attr name="extra_true_tag" format="string"/>
+        <attr name="extra_false_tag" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="OrderByGroup"/>
+
+    <attr format="reference" name="orderByButtonStyle"/>
+
+    <attr name="orderByGroup" format="reference" />
+
+</resources>

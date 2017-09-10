@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.zzzzzzzzoli.orderbybuttons">
+    <item android:drawable="@drawable/name_asc_fill" android:state_checked="true" app:extra="true" />
+    <item android:drawable="@drawable/name_desc_fill" android:state_checked="true" app:extra="false"  />
+    <item android:drawable="@drawable/name_desc" android:state_checked="false" app:extra="false" />
+    <item android:drawable="@drawable/name_asc" android:state_checked="false" app:extra="true"  />
+</selector>

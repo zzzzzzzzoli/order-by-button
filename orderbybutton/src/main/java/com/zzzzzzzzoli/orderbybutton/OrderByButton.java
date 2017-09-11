@@ -54,12 +54,7 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
 
     @Override
     public void toggle() {
-        // we override to prevent toggle when the radio is already
-        // checked (as opposed to check boxes widgets)
-        // ^-- That's from the original RadioButton class.
-        // Here I introduced the firstCallConsumed boolean to filter double calls
-        // and changing the extraState of the button
-        if (firstCallConsumed) {firstCallConsumed=true;} else {
+
             if (!isChecked()) {
                 super.toggle();
             } else {
@@ -69,7 +64,7 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
             firstCallConsumed=false;
             refreshDrawableState();
             listener.onButtonStateChange(this);
-        }
+
     }
 
     @Override

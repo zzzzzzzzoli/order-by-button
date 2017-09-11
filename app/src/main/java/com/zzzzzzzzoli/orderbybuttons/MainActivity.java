@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        /*textView = (TextView) findViewById(R.id.textview);
+        textView = (TextView) findViewById(R.id.textview);
 
         group = (OrderByGroup) findViewById(R.id.group);
         group.setListener(new OrderByButton.OnButtonStateChangeListener() {
@@ -26,5 +26,5 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(group.getOrderByString("ORDER BY "));
             }
         });
-    */}
+    }
 }

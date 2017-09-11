@@ -36,6 +36,7 @@ public class OrderByGroup extends RadioGroup implements OrderByButton.OnButtonSt
             OrderByButton button = (OrderByButton) child;
             button.setListener(this);
         }
+        setSaveEnabled(true);
     }
 
     @Override

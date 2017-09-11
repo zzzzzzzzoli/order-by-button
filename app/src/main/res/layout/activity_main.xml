@@ -31,7 +31,8 @@
             android:clickable="true"
             android:drawableEnd="@drawable/price_button"
             app:extraState="false"
-            app:tag="price" />
+            app:tag="price"
+            android:id="@+id/price"/>
 
         <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
@@ -40,7 +41,8 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:drawableEnd="@drawable/distance_button"
-            app:tag="distance" />
+            app:tag="distance"
+            android:id="@+id/distance"/>
 
         <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
@@ -49,7 +51,8 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:drawableEnd="@drawable/name_button"
-            app:tag="name" />
+            app:tag="name"
+            android:id="@+id/name"/>
 
 
         <com.zzzzzzzzoli.orderbybutton.OrderByButton
@@ -59,7 +62,8 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:drawableEnd="@drawable/time_button"
-            app:tag="time" />
+            app:tag="time"
+            android:id="@+id/time"/>
 
         <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
@@ -69,6 +73,7 @@
             android:clickable="true"
             android:drawableEnd="@drawable/applaud_button"
             app:enableExtra="false"
-            app:tag="applaud" />
+            app:tag="applaud"
+            android:id="@+id/applaud"/>
     </com.zzzzzzzzoli.orderbybutton.OrderByGroup>
 </LinearLayout>

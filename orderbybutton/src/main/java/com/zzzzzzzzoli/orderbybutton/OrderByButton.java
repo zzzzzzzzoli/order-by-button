@@ -2,7 +2,10 @@ package com.zzzzzzzzoli.orderbybutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.widget.CompoundButton;
 
 /**
  * Created by zoli on 07/09/17.
@@ -45,6 +48,7 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
         } finally {
             a.recycle();
         }
+        setSaveEnabled(true);
     }
 
     public boolean isExtraState() {
@@ -137,4 +141,67 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
     public int hashCode() {
         return getId();
     }
+
+    static class SavedState extends BaseSavedState {
+        boolean checked;
+        boolean extraState;
+
+        SavedState(Parcelable superState) {
+            super(superState);
+        }
+
+        private SavedState(Parcel in) {
+            super(in);
+            checked = (Boolean)in.readValue(null);
+            extraState = (Boolean)in.readValue(getClass().getClassLoader());
+        }
+
+        @Override
+        public void writeToParcel(Parcel out, int flags) {
+            super.writeToParcel(out, flags);
+            out.writeValue(checked);
+            out.writeValue(extraState);
+        }
+
+        @Override
+        public String toString() {
+            return "OrderByButton.SavedState{"
+                    + Integer.toHexString(System.identityHashCode(this))
+                    + " checked=" + checked + " extraState=" + extraState +" }";
+        }
+
+        public static final Parcelable.Creator<SavedState> CREATOR
+                = new Parcelable.Creator<SavedState>() {
+            public SavedState createFromParcel(Parcel in) {
+                return new SavedState(in);
+            }
+
+            public SavedState[] newArray(int size) {
+                return new SavedState[size];
+            }
+        };
+    }
+
+    @Override
+    public Parcelable onSaveInstanceState() {
+        Parcelable superState = super.onSaveInstanceState();
+
+        SavedState ss = new SavedState(superState);
+
+        ss.checked = isChecked();
+        ss.extraState = extraState;
+        return ss;
+    }
+
+    @Override
+    public void onRestoreInstanceState(Parcelable state) {
+        SavedState ss = (SavedState) state;
+
+        super.onRestoreInstanceState(ss.getSuperState());
+        setChecked(ss.checked);
+        setExtraState(ss.extraState);
+        requestLayout();
+    }
+
+
 }

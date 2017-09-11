@@ -3,7 +3,7 @@
 
     <declare-styleable name="OrderByButton">
         <attr name="enableExtra" format="boolean"/>
-        <attr name="extra" format="boolean"/>
+        <attr name="extraState" format="boolean"/>
         <attr name="tag" format="string"/>
         <attr name="extra_true_tag" format="string"/>
         <attr name="extra_false_tag" format="string"/>

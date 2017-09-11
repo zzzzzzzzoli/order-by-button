@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.zzzzzzzzoli.orderbybuttons">
-    <item android:drawable="@drawable/price_asc_fill" android:state_checked="true" app:extra="true" />
-    <item android:drawable="@drawable/price_desc_fill" android:state_checked="true" app:extra="false"  />
-    <item android:drawable="@drawable/price_asc" android:state_checked="false" app:extra="true"  />
-    <item android:drawable="@drawable/price_desc" android:state_checked="false" app:extra="false" />
+    <item android:drawable="@drawable/price_asc_fill" android:state_checked="true" app:extraState="true" />
+    <item android:drawable="@drawable/price_desc_fill" android:state_checked="true" app:extraState="false"  />
+    <item android:drawable="@drawable/price_asc" android:state_checked="false" app:extraState="true"  />
+    <item android:drawable="@drawable/price_desc" android:state_checked="false" app:extraState="false" />
     <item android:drawable="@drawable/price_pressed" android:state_pressed="true"/>
 </selector>

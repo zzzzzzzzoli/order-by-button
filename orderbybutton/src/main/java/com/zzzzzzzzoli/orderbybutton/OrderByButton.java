@@ -10,8 +10,7 @@ import android.util.AttributeSet;
 
 public class OrderByButton extends android.support.v7.widget.AppCompatRadioButton {
 
-    private static final int[] mStates = {R.attr.extra};
-    private boolean firstCallConsumed = false;
+    private static final int[] mStates = {R.attr.extraState};
     private boolean extraState;
     private boolean enableExtraState = true;
     private String extraStateTrueTag = "";
@@ -39,7 +38,7 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
             tag = a.getString(R.styleable.OrderByButton_tag); // this tag is used to build query strings
             enableExtraState = a.getBoolean(R.styleable.OrderByButton_enableExtra, true); // by default extraState is enabled
             if (enableExtraState) {
-                extraState = a.getBoolean(R.styleable.OrderByButton_extra, true); // starting value of extraState, default is true
+                extraState = a.getBoolean(R.styleable.OrderByButton_extraState, true); // starting value of extraState, default is true
                 extraStateTrueTag = a.getString(R.styleable.OrderByButton_extra_true_tag) == null ? " asc" : a.getString(R.styleable.OrderByButton_extra_true_tag);
                 extraStateFalseTag = a.getString(R.styleable.OrderByButton_extra_false_tag) == null ? " desc" : a.getString(R.styleable.OrderByButton_extra_false_tag);
             }
@@ -61,9 +60,9 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
                 extraState = !extraState;
                 if (!enableExtraState) {return;} // if extraState is not allowed the state doesn't change, so we don't want to redraw or notify listener
             }
-            firstCallConsumed=false;
+
             refreshDrawableState();
-            listener.onButtonStateChange(this);
+            if (listener!=null) {listener.onButtonStateChange(this);}
 
     }
 

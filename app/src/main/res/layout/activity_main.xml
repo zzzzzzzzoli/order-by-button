@@ -30,7 +30,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:drawableEnd="@drawable/price_button"
-            app:extra="false"
+            app:extraState="false"
             app:tag="price" />
 
         <com.zzzzzzzzoli.orderbybutton.OrderByButton

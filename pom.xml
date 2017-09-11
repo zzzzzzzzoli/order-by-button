@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.zzzzzzzzoli</groupId>
+  <artifactId>orderbybuttons</artifactId>
+  <version>0.9.0</version>
+  <packaging>apk</packaging>
+  <name>OrderByButton</name>
+
+  <properties>
+        <!-- use UTF-8 for everything -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<github.maven.repository>file:///home/zoli/Desktop/DigitalHouseOld/OrderByButtons/</github.maven.repository>
+
+  </properties>
+
+  <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+  </dependencies>
+  
+  <distributionManagement>
+  	<repository>
+  		<id>maven-repository</id>
+  		<url>${github.maven.repository}</url>
+  	</repository>
+  </distributionManagement>
+
+</project>

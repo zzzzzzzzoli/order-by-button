@@ -15,7 +15,7 @@
         android:textAlignment="center"
         android:textSize="20sp" />
 
-    <com.zzzzzzzzoli.orderbybuttons.OrderByGroup
+    <com.zzzzzzzzoli.orderbybutton.OrderByGroup
         android:id="@+id/group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,52 +23,52 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+        <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:drawableRight="@drawable/price_button"
+            android:drawableEnd="@drawable/price_button"
             app:extra="false"
             app:tag="price" />
 
-        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+        <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:drawableRight="@drawable/distance_button"
+            android:drawableEnd="@drawable/distance_button"
             app:tag="distance" />
 
-        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+        <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:drawableRight="@drawable/name_button"
+            android:drawableEnd="@drawable/name_button"
             app:tag="name" />
 
 
-        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+        <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:drawableRight="@drawable/time_button"
+            android:drawableEnd="@drawable/time_button"
             app:tag="time" />
 
-        <com.zzzzzzzzoli.orderbybuttons.OrderByButton
+        <com.zzzzzzzzoli.orderbybutton.OrderByButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:drawableRight="@drawable/applaud_button"
+            android:drawableEnd="@drawable/applaud_button"
             app:enableExtra="false"
             app:tag="applaud" />
-    </com.zzzzzzzzoli.orderbybuttons.OrderByGroup>
+    </com.zzzzzzzzoli.orderbybutton.OrderByGroup>
 </LinearLayout>

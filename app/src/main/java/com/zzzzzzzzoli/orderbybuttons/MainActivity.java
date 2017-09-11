@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.zzzzzzzzoli.orderbybutton.OrderByButton;
+import com.zzzzzzzzoli.orderbybutton.OrderByGroup;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;

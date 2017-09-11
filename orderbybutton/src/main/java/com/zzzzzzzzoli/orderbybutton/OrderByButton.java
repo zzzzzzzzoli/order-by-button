@@ -1,4 +1,4 @@
-package com.zzzzzzzzoli.orderbybuttons;
+package com.zzzzzzzzoli.orderbybutton;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -44,7 +44,7 @@ public class OrderByGroup extends RadioGroup implements OrderByButton.OnButtonSt
             buttonsForQuery.remove(button);
         }
         buttonsForQuery.add(0, button);
-        listener.onButtonStateChange(button);
+        if (listener!=null) {listener.onButtonStateChange(button);}
     }
 
     public String getOrderByString(String startTag) {

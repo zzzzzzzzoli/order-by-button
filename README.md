@@ -1,7 +1,7 @@
 # Multistate RadioButtons for ordering lists
 Custom RadioButtons with RadioGroup, allowing you to declare two extra states for each button. 
 
-[]({{site.baseurl}}/orderByButtons.gif)
+[](https://github.com/zzzzzzzzoli/order-by-button/blob/master/orderByButtons.gif)
 
 Basically:
 

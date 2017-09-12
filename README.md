@@ -61,7 +61,7 @@ In your layout:
 Make a selector xml drawable like this:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.zzzzzzzzoli.orderbybuttons">
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:drawable="@drawable/price_asc_fill" android:state_checked="true" app:extraState="true" />
     <item android:drawable="@drawable/price_desc_fill" android:state_checked="true" app:extraState="false"  />
     <item android:drawable="@drawable/price_asc" android:state_checked="false" app:extraState="true"  />

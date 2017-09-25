@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OrderByButtons.iml" filepath="$PROJECT_DIR$/OrderByButtons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-by-button.iml" filepath="$PROJECT_DIR$/order-by-button.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderbybutton/orderbybutton.iml" filepath="$PROJECT_DIR$/orderbybutton/orderbybutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/orderbybutton/orderbybutton.iml" filepath="$PROJECT_DIR$/orderbybutton/orderbybutton.iml" />
     </modules>
   </component>

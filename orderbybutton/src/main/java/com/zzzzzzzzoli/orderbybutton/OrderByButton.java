@@ -19,7 +19,6 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
     private String extraStateTrueTag = "";
     private String extraStateFalseTag = "";
     private OnButtonStateChangeListener listener;
-    private String tag;
 
     public void setListener(OnButtonStateChangeListener listener) {
         this.listener = listener;
@@ -38,7 +37,7 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
         setOnClickListener(null);
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.OrderByButton, 0, 0);
         try {
-            tag = a.getString(R.styleable.OrderByButton_tag); // this tag is used to build query strings
+            setTag(a.getString(R.styleable.OrderByButton_tag)); // this tag is used to build query strings
             enableExtraState = a.getBoolean(R.styleable.OrderByButton_enableExtra, true); // by default extraState is enabled
             if (enableExtraState) {
                 extraState = a.getBoolean(R.styleable.OrderByButton_extraState, true); // starting value of extraState, default is true
@@ -87,11 +86,6 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
         public void onButtonStateChange(OrderByButton button);
     }
 
-    @Override
-    public String getTag() {
-        return tag;
-    }
-
     public String getExtraStateTrueTag() {
         return extraStateTrueTag;
     }
@@ -114,10 +108,6 @@ public class OrderByButton extends android.support.v7.widget.AppCompatRadioButto
 
     public void setExtraStateFalseTag(String extraStateFalseTag) {
         this.extraStateFalseTag = extraStateFalseTag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
     }
 
     public String getExtraTag() {
